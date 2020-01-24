@@ -17,7 +17,6 @@ var index = mini.indexOf(thisPage);
 
 var stato = localStorage.getItem('stato');
 
-
 preload = function(){
   font = loadFont("../assets/Cygnito Mono.ttf");
   calend = loadImage("../assets/calend.png");
@@ -26,7 +25,10 @@ preload = function(){
 }
 
 setup = function(){
+  if (localStorage.mini2 == "false"){
     localStorage.setItem('totalScore', localStorage.totalScore - 150);
+    localStorage.setItem('mini2', true);
+  }
 
     if(index !== -1){
       mini.splice(index, 1);

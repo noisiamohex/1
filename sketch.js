@@ -17,7 +17,13 @@ setup = function() {
  localStorage.setItem('startMinuti', startMinuti);
  localStorage.setItem('startOre', startOre);
  localStorage.setItem('totalScore', 500);
-
+ localStorage.setItem('mini1', false);
+ localStorage.setItem('mini2', false);
+ localStorage.setItem('mini3', false);
+ localStorage.setItem('mini4', false);
+ localStorage.setItem('mini5', false);
+ localStorage.setItem('mini6', false);
+ localStorage.setItem('mini7', false);
 }
 
 draw = function() {

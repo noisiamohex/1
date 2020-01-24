@@ -21,7 +21,10 @@ preload = function(){
 }
 
 setup = function(){
-    localStorage.setItem('totalScore', localStorage.totalScore - 150);
+if (localStorage.mini7 == "false"){
+  localStorage.setItem('totalScore', localStorage.totalScore - 150);
+  localStorage.setItem('mini7', true);
+}
 
     if(index !== -1){
       mini.splice(index, 1);

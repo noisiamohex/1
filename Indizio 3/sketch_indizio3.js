@@ -49,15 +49,13 @@ function setup() {
   //https://gist.github.com/callmephilip/3626669
   //https://medium.com/mirafra-sw-engineering/how-to-change-screen-orientation-with-javascript-9b82fca93d56
 
-  //on refresh su miniprove viene sottratto punteggio
-
   //file per prove: collegamenti (rispGiusta e rispSbagliata)
 
   //file per provine: collegamenti
 
-  //ritenta in miniprova 1 serve?
-
   //pulizia
+
+  //numero morti
 
   document.getElementById('mamt').innerHTML = dispScore+"AB"+duration;
 }

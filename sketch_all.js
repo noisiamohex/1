@@ -22,5 +22,3 @@ history.forward();
 window.onpopstate = function () {
   history.go(1);
 }
-
-screenOrientation.lock(PORTRAIT);

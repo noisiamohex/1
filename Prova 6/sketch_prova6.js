@@ -135,7 +135,7 @@ function getTot(_xStart, _xFin, _yStart, _yFin, _dim){
 function escePass(){
   if(percGreen > 50 && blend == 0){
     stato = 1;
-  } else if((percBlue + percRed)/2 > 45 && blend == 0){
+  } else if((percBlue + percRed)/2 > 40 && blend == 0){
     stato = 2;
   }
 }

@@ -56,8 +56,8 @@ function setup() {
     }
   });
 
-  cisono = createButton("[ CI SONO ]");
-  cisono.position(width/2 + 40, height/2+330);
+  cisono = createButton("[ SONO ARRIVATO ]");
+  cisono.position(tutto.width/2, height/2+330);
 
   capture.size(840, 500);
   capture.hide();

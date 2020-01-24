@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <title>HEX</title>
+
+    <style>
+    @font-face { font-family: Cygnito Mono; src: url('../assets/Cygnito Mono.ttf'); }
+
+    body {
+      padding: 0;
+      margin: 0;
+      }
+
+    html, body {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      }
+    </style>
+
+      <script>document.write('<base href="' + document.location + '" />');</script>
+      <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.22/angular.js" data-semver="1.2.22"></script>
+      <script src="app_indizio2.js"></script>
+      <script src="../addons/dirTerminalType.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  </head>
+  <style>
+
+  .caret {
+    display: inline-block;
+    width: 3px;
+    margin-bottom: -2px;
+    margin-left: 3px;
+    margin-right: -4px;
+    height: 16px;
+    animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  body{
+    background-color: black;
+  }
+
+  p{
+    color: red;
+    font-size: 45px;
+    font-family: "Cygnito Mono";
+  }
+
+  div{
+    position: fixed;
+    top: 92%;
+    left: 50%;
+    width: 92%;
+    height: 86%;
+    transform: translate(-50%, -50%);
+  }
+
+  #password{
+    position: fixed;
+    top: 115%;
+    left: 50%;
+    width: 92%;
+    height: 76%;
+    transform: translate(-50%, -50%);
+  }
+
+  button {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    color: red;
+    font-size: 40px;
+    font-family: "Cygnito Mono";
+    left: 50%;
+    transform: translate(-50%, 80%);
+  }
+
+  #arrendo{
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    color: red;
+    font-size: 40px;
+    font-family: "Cygnito Mono";
+    transform: translate(-50%, 250%);
+  }
+
+  form{
+    font-size: 45px;
+    font-family: "Cygnito Mono";
+    color: red;
+  }
+
+  img{
+    max-width: 30vh;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  </style>
+  <body ng-controller="MainCtrl">
+    <div>
+      <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
+
+      <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
+        > per attivare il monitor dovrete tenere premuti i tasti H E X sulla tastiera per 5 secondi</p>
+      </div>
+
+    <div id="password">
+    <button onclick="goToPage()" ng-show="p2">
+        [ CONTINUA ]</button>
+
+      <button id="arrendo" onclick="window.location.href= '../Arrendo/index_arrendo.html'" ng-show="p2">
+        [ MI ARRENDO ]</button>
+      </div>
+
+    <img src="../assets/occhio.png" alt>
+  </body>
+
+  <script src="../p5.min.js"></script>
+  <script src="../addons/p5.dom.min.js"></script>
+  <script src="../sketch_all.js"></script>
+  <script src="sketch_indizio2.js"></script>
+
+</html>

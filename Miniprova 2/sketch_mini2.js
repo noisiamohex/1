@@ -1,0 +1,94 @@
+var font;
+var calend;
+var tred;
+var bin;
+
+var obst;
+
+var obstacle;
+
+var retrievedMiniProve = localStorage.getItem('listaMiniProve');
+
+var mini = JSON.parse(retrievedMiniProve);
+
+var thisPage = "../Miniprova 2/index_mini2.html";
+
+var index = mini.indexOf(thisPage);
+
+var stato = localStorage.getItem('stato');
+
+
+preload = function(){
+  font = loadFont("../assets/Cygnito Mono.ttf");
+  calend = loadImage("../assets/calend.png");
+  tred = loadImage("../assets/13.png")
+  bin = loadImage("../assets/bin.png")
+}
+
+setup = function(){
+    localStorage.setItem('totalScore', localStorage.totalScore - 150);
+
+    if(index !== -1){
+      mini.splice(index, 1);
+    }
+
+    localStorage.setItem("listaMiniProve", JSON.stringify(mini));
+
+   	canvas = createCanvas(900, 900);
+    canvas.position(windowWidth/2 - 450, windowHeight/2 - 500);
+   	background(0);
+
+    obstacle = new Obst(800, 800);
+}
+
+draw = function() {
+
+  background(0);
+  imageMode(CENTER);
+  image(calend, width/2, height/2 - 40, calend.width/2, calend.height/2);
+
+  var toccoX = width/2 + 150;
+  var toccoY = height/2 - 95;
+
+  if (touches.length > 0) {
+    toccoX = touches[0].x;
+    toccoY = touches[0].y;
+    image(tred, touches[0].x - 70, touches[0].y, tred.width*2, tred.height*2);
+  } else {
+    image(tred, toccoX, toccoY, tred.width/2, tred.height/2);
+  }
+
+  for (var i = 0; i < touches.length; i++) {
+    image(tred, touches[i].x - 70, touches[i].y, tred.width*2, tred.height*2);
+  }
+
+  obstacle.display();
+
+  var d = dist(toccoX, toccoY, obstacle.x, obstacle.y);
+
+  if(d < 50){
+    if (stato == 0) {
+      window.open('../Indizio 1/index_indizio1.html', "_self");
+    }
+    if (stato == 1) {
+      window.open('../Indizio 2/index_indizio2.html', "_self");
+    }
+    if (stato == 2) {
+      window.open('../Indizio 3/index_indizio3.html', "_self");
+    }
+  }
+}
+
+function Obst(_x, _y){
+  this.x = _x;
+  this.y = _y;
+
+  this.display = function(){
+    image(bin, this.x, this.y, bin.width/2, bin.height/2)
+  }
+}
+
+//define that the page will not slide when touched
+function touchMoved() {
+  return false;
+}

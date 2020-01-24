@@ -48,7 +48,7 @@ function setup() {
 
   canvas = createCanvas(900, 700);
   canvas.position(tutto.width/2 - 450, 120);
-  canvas.parent("tutto")
+  canvas.parent("tutto");
 
   capture = createCapture({
     video: {

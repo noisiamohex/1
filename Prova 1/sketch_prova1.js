@@ -2,6 +2,9 @@ var font;
 var occhio;
 var error;
 
+var rispMeglio = ["sopracampa", "Sopracampa", "SOPRACAMPA"];
+var rispPeggio = ["sottocrepa", "Sottocrepa", "SOTTOCREPA"];
+
 var retrievedProve = localStorage.getItem('listaProve');
 
 var prove = JSON.parse(retrievedProve);
@@ -28,30 +31,4 @@ function setup() {
 }
 
 function draw() {
-}
-
-  var retrievedMiniProve = localStorage.getItem('listaMiniProve');
-
-  var mini = JSON.parse(retrievedMiniProve);
-
-  var stato = localStorage.getItem('stato');
-
-  goToPage = function() {
-    var randPage = random(mini);
-
-    if (document.getElementById("myInput").value == ("sopracampa") || document.getElementById("myInput").value == ("Sopracampa")) {
-      if (stato == 0) {
-        window.open('../Indizio 1/index_indizio1.html', "_self");
-      }
-      if (stato == 1) {
-        window.open('../Indizio 2/index_indizio2.html', "_self");
-      }
-      if (stato == 2) {
-        window.open('../Indizio 3/index_indizio3.html', "_self");
-      }
-    } else if (document.getElementById("myInput").value == ("sottocrepa") || document.getElementById("myInput").value == ("Sottocrepa")) {
-      window.open(randPage, "_self");
-    } else {
-      document.getElementById("error").style.opacity = 1;
-    }
 }

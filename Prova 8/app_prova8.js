@@ -15,11 +15,6 @@ app.controller('MainCtrl', function($scope, $timeout) {
     $scope.p4 = true;
     document.getElementById("myInput").blur();
   }
-
-  findIndizio = function(){
-    document.getElementById("indizio").style.opacity = 1;
-  }
-
 });
 
 // document.getElementById("myInput").value == ("iocicredo")

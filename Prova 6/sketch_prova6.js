@@ -140,11 +140,6 @@ function escePass(){
   }
 }
 
-function mousePressed(){
-  document.getElementById("error").style.opacity = 0;
-  document.getElementById("indizio").style.opacity = 0;
-}
-
 var retrievedMiniProve = localStorage.getItem('listaMiniProve');
 
 var mini = JSON.parse(retrievedMiniProve);

@@ -33,22 +33,10 @@ if (localStorage.mini3 == "false"){
 
     advice = createButton("Ferro");
     advice.style("font-size: 50px");
-    advice.mousePressed(goTo);
+    advice.mousePressed(goToPage);
 }
 
 draw = function() {
-}
-
-function goTo(){
-  if (stato == 0) {
-    window.open('../Indizio 1/index_indizio1.html', "_self");
-  }
-  if (stato == 1) {
-    window.open('../Indizio 2/index_indizio2.html', "_self");
-  }
-  if (stato == 2) {
-    window.open('../Indizio 3/index_indizio3.html', "_self");
-  }
 }
 
 //define that the page will not slide when touched

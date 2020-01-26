@@ -58,15 +58,7 @@ for (var i = 0; i < touches.length; i++){
 };
 
   if(touches.length == 2 && d < 100 && move == true){
-    if (stato == 0) {
-      window.open('../Indizio 1/index_indizio1.html', "_self");
-    }
-    if (stato == 1) {
-      window.open('../Indizio 2/index_indizio2.html', "_self");
-    }
-    if (stato == 2) {
-      window.open('../Indizio 3/index_indizio3.html', "_self");
-    }
+    goToPage();
   }
 
   textFont(font);

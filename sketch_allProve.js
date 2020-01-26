@@ -36,7 +36,7 @@ function goToPage() {
     if (stato == 2) {
       window.open('../Indizio 3/index_indizio3.html', "_self");
     }
-  } else if (rispPeggio.indexOf(document.getElementById("myInput")) !== -1) {
+  } else if (rispPeggio.indexOf(document.getElementById("myInput").value) !== -1) {
     window.open(randPage, "_self");
   } else {
     document.getElementById("error").style.opacity = 1;

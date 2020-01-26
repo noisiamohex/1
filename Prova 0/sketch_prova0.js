@@ -2,6 +2,8 @@ var font;
 var occhio;
 var error;
 
+var rispMeglio = ["salvami", "Salvami", "SALVAMI"];
+
 var prove = [
   "../Prova 1/index_prova1.html",
   "../Prova 2/index_prova2.html",
@@ -51,7 +53,7 @@ goToPage = function(){
 
   var randPage = random(prove);
 
-  if(document.getElementById("myInput").value == ("salvami") || document.getElementById("myInput").value == ("Salvami")){
+  if(rispMeglio.indexOf(document.getElementById("myInput").value) !== -1){
     window.open(randPage, "_self");
   } else{
     document.getElementById("error").style.opacity = 1;

@@ -2,6 +2,9 @@ var font;
 var occhio;
 var error;
 
+var rispMeglio = ["iivx", "Iivx", "IIVX"];
+var rispPeggio = ["xvii", "Xvii", "XVII"];
+
 var retrievedProve = localStorage.getItem('listaProve');
 
 var prove = JSON.parse(retrievedProve);
@@ -9,7 +12,6 @@ var prove = JSON.parse(retrievedProve);
 var thisPage = "../Prova 2/index_prova2.html";
 
 var index = prove.indexOf(thisPage);
-
 
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
@@ -26,34 +28,3 @@ function setup() {
 }
 
 function draw() {}
-
-var retrievedMiniProve = localStorage.getItem('listaMiniProve');
-
-var mini = JSON.parse(retrievedMiniProve);
-
-var stato = localStorage.getItem('stato');
-
-goToPage = function(){
-var randPage = random(mini);
-
-if(document.getElementById("myInput").value == ("iivx") ||
-    document.getElementById("myInput").value == ("Iivx") ||
-    document.getElementById("myInput").value == ("IIVX")){
-  if (stato == 0) {
-    window.open('../Indizio 1/index_indizio1.html', "_self");
-  }
-  if (stato == 1) {
-    window.open('../Indizio 2/index_indizio2.html', "_self");
-  }
-  if (stato == 2) {
-    window.open('../Indizio 3/index_indizio3.html', "_self");
-  }
-} else if(document.getElementById("myInput").value == ("xvii") ||
-          document.getElementById("myInput").value == ("Xvii") ||
-          document.getElementById("myInput").value == ("XVII")){
-  window.open(randPage, "_self");
-}
-else{
-  document.getElementById("error").style.opacity = 1;
-}
-}

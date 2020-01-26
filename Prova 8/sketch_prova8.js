@@ -2,6 +2,9 @@ var font;
 var occhio;
 var error;
 
+var rispMeglio = ["<o>", "<O>"];
+var rispPeggio = ["<->"];
+
 var retrievedProve = localStorage.getItem('listaProve');
 
 var prove = JSON.parse(retrievedProve);

@@ -10,7 +10,6 @@ app.controller('MainCtrl', function($scope, $timeout) {
   }
 
   $scope.textEntered = function() {
-    $scope.p12 = true;
     document.getElementById("idInput").blur();
   }
 

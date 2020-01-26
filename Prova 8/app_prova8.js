@@ -11,8 +11,6 @@ app.controller('MainCtrl', function($scope, $timeout) {
   }
 
   $scope.textEntered = function() {
-    $scope.p3 = true;
-    $scope.p4 = true;
     document.getElementById("myInput").blur();
   }
 });

@@ -6,13 +6,6 @@ var startOre;
 
 //////////////////////////////////////////////////////////////////////
 
-function fullScreenCheck() {
-  if (document.fullscreenElement) return;
-  return document.documentElement.requestFullscreen();
-}
-
-  screen.orientation.lock("portrait");
-
 //////////////////////////////////////////////////////////////////////
 
 preload = function() {

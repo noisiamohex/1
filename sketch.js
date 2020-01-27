@@ -4,15 +4,15 @@ var occhio;
 var startMinuti;
 var startOre;
 
-locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock || orientation.lock;
-locOrientation("portrait");
+// locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock || orientation.lock;
+// locOrientation("portrait");
 
-// var lockFunction =  window.screen.orientation.lock;
-// if (lockFunction.call(window.screen.orientation, 'landscape')) {
-//            console.log('Orientation locked')
-//         } else {
-//             console.error('There was a problem in locking the orientation')
-//         }
+var lockFunction =  window.screen.orientation.lock;
+if (lockFunction.call(window.screen.orientation, 'portrait')) {
+           console.log('Orientation locked')
+        } else {
+            console.error('There was a problem in locking the orientation')
+        }
 
 preload = function() {
   font = loadFont("./assets/Cygnito Mono.ttf");

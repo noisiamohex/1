@@ -2,6 +2,7 @@ var font;
 var occhio;
 var database;
 var ref;
+var numero;
 
 preload = function() {
   font = loadFont("../assets/Cygnito Mono.ttf");
@@ -24,20 +25,34 @@ setup = function() {
 database = firebase.database();
 ref = database.ref('deaths');
 
-if(localStorage.arrendo == "false"){
-  submitDeath();
-}
+ref.on('value', gotData, errData);
+
+canvas = createCanvas(windowWidth, windowHeight);
 }
 
-function submitDeath(){
-  var data = {
-    death: 1
-  }
-  var deaths = database.ref('deaths');
-  ref.push(data);
-  localStorage.setItem('arrendo', true);
+function gotData(data){
+  var deaths = data.val();
+  var keys = Object.keys(deaths);
+  numero = ("00" + keys.length).slice(-3);
+  //console.log(numero);
 }
 
+function errData(err){
+  console.log('error');
+    console.log(err);
+}
 
 draw = function() {
+  background(0);
+  textFont(font);
+  fill(255,0,0);
+  textAlign(CENTER,CENTER)
+  push();
+  textSize(300);
+  text(numero, width/2, height*5/9 + 50);
+  pop();
+  textSize(75);
+  text("I MORTI DI OGGI", width/2, height*4/9 - 70);
+
+  //testo.parent('container')
 }

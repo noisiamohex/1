@@ -24,6 +24,7 @@ setup = function() {
  localStorage.setItem('mini5', false);
  localStorage.setItem('mini6', false);
  localStorage.setItem('mini7', false);
+ localStorage.setItem('arrendo', false);
 }
 
 draw = function() {

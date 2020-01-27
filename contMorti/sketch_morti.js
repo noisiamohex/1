@@ -53,6 +53,4 @@ draw = function() {
   pop();
   textSize(75);
   text("I MORTI DI OGGI", width/2, height*4/9 - 70);
-
-  //testo.parent('container')
 }

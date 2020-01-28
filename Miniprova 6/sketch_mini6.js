@@ -41,7 +41,6 @@ if (localStorage.mini7 == "false"){
 
 }
 
-
 draw = function() {
   background(0);
 

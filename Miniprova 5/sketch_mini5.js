@@ -38,8 +38,8 @@ if (localStorage.mini5 == "false"){
    	canvas = createCanvas(900, 900);
     canvas.position(windowWidth/2 - 450, windowHeight/2 - 500);
     background(0);
-    imageMode(CENTER);
-    image(cocc, width/2, height/2, cocc.width/2, cocc.height/2);
+      imageMode(CENTER);
+      image(cocc, width/2, height/2, cocc.width/2, cocc.height/2);
 
 }
 
@@ -71,4 +71,14 @@ draw = function() {
   if(score == 7){
     goToPage();
   }
+
+  rect(width - 350, height/10 - 100, 300, 100);
+  fill(0);
+
+  push();
+  textFont(font);
+  textSize(45);
+  fill("red");
+  text("score: " + score + "/7", width - 350, height/10 - 40);
+  pop();
 }

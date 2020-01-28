@@ -5,7 +5,7 @@ var startMinuti;
 var startOre;
 
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-alert("iOS");
+alert(iOS);
 
 //////////////////////////////////////////////////////////////////////
 

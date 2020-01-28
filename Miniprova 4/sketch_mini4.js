@@ -58,6 +58,7 @@ function ruotaFerro(){
   if(value == 270){
     goToPage();
 }
+}
 
 //define that the page will not slide when touched
 function touchMoved() {

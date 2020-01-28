@@ -59,7 +59,7 @@ function setup() {
     }
   });
 
-  cisono = createButton("[ SONO ARRIVATO ]");
+  cisono = createButton("[ CI SONO ]");
   cisono.position(tutto.width/2, height/2+330);
 
   capture.size(840, 500);
@@ -73,7 +73,7 @@ function setup() {
 
 function openCamera() {
  cisono.style("display: none");
- select("#start").html("> mostraci il tuo colore preferito");
+ select("#start").html("> si alza il sipario. che colore scegli?");
  blend = 0;
 }
 

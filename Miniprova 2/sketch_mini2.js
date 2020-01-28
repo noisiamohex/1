@@ -71,6 +71,7 @@ draw = function() {
   if(d < 50){
     goToPage();
 }
+}
 
 function Obst(_x, _y){
   this.x = _x;

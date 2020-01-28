@@ -4,7 +4,9 @@ var error;
 
 var rispMeglio = ["salvami", "Salvami", "SALVAMI"];
 
-var prove = [
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+  var prove = [
   "../Prova 1/index_prova1.html",
   "../Prova 2/index_prova2.html",
   "../Prova 3/index_prova3.html",
@@ -13,6 +15,10 @@ var prove = [
   "../Prova 6/index_prova6.html",
   "../Prova 7/index_prova7.html",
   "../Prova 8/index_prova8.html"];
+
+  if(iOS == true){
+    prove.splice(5, 1);
+  }
 
 var mini = [
   "../Miniprova 1/index_mini1.html",

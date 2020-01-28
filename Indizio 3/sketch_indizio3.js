@@ -1,6 +1,4 @@
 var font;
-var occhio;
-var error;
 
 var duration;
 
@@ -10,8 +8,6 @@ var password;
 
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
-  occhio = loadImage("../assets/occhio.png");
-  error = loadImage("../assets/error.png")
 }
 
 function setup() {
@@ -39,23 +35,6 @@ function setup() {
   duration = ("00" + tempo).slice(-4);
 
   dispScore = ("0" + defScore).slice(-3);
-
-  console.log(totalScore);
-  console.log(tempoScore);
-  console.log(defScore);
-
-  //file per tutti: ((scade il tempo - non tornare indietro)) - avoid rotation
-  //https://developer.mozilla.org/en-US/docs/Web/API/ScreenOrientation/lock#Browser_compatibility
-  //https://gist.github.com/callmephilip/3626669
-  //https://medium.com/mirafra-sw-engineering/how-to-change-screen-orientation-with-javascript-9b82fca93d56
-
-  //file per prove: collegamenti (rispGiusta e rispSbagliata)
-
-  //file per provine: collegamenti
-
-  //pulizia
-
-  //numero morti
 
   document.getElementById('mamt').innerHTML = dispScore+"AB"+duration;
 }

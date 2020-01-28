@@ -1,5 +1,4 @@
 var font;
-var occhio;
 var database;
 var ref;
 
@@ -38,6 +37,12 @@ function submitDeath(){
   localStorage.setItem('arrendo', true);
 }
 
-
 draw = function() {
+}
+
+history.pushState(null, null, location.href);
+history.back();
+history.forward();
+window.onpopstate = function () {
+  history.go(1);
 }

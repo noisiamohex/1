@@ -1,11 +1,7 @@
 var font;
-var occhio;
-var error;
 
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
-  occhio = loadImage("../assets/occhio.png");
-  error = loadImage("../assets/error.png")
 }
 
 function setup() {
@@ -13,4 +9,11 @@ function setup() {
 }
 
 function draw() {
+}
+
+history.pushState(null, null, location.href);
+history.back();
+history.forward();
+window.onpopstate = function () {
+  history.go(1);
 }

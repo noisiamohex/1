@@ -1,18 +1,12 @@
 var font;
-var occhio;
 
 var startMinuti;
 var startOre;
 
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-//////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////////
-
 preload = function() {
   font = loadFont("./assets/Cygnito Mono.ttf");
-  occhio = loadImage("./assets/occhio.png");
 }
 
 setup = function() {

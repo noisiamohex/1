@@ -1,6 +1,4 @@
 var font;
-var occhio;
-var error;
 
 var cisono;
 
@@ -19,7 +17,7 @@ var percRed;
 var percGreen;
 var percBlue;
 
-var stato = 0;
+var statoCol = 0;
 
 var bg;
 var blend = 255;
@@ -38,8 +36,6 @@ var index = prove.indexOf(thisPage);
 
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
-  occhio = loadImage("../assets/occhio.png");
-  error = loadImage("../assets/error.png");
 }
 
 function setup() {
@@ -91,13 +87,13 @@ function draw() {
   fill(0, blend);
   bg = rect(width / 2, height / 2, 840, 500);
 
-  if (stato == 1) {
+  if (statoCol == 1) {
     fill(255, 0, 0);
     textFont(font);
     textAlign(CENTER, CENTER);
     textSize(60);
     text("PASSWORD: 00FF00", width / 2, height / 2);
-  } else if (stato == 2) {
+  } else if (statoCol == 2) {
     fill(255, 0, 0);
     textFont(font);
     textAlign(CENTER, CENTER);
@@ -137,8 +133,8 @@ function getTot(_xStart, _xFin, _yStart, _yFin, _dim){
 
 function escePass(){
   if(percGreen > 50 && blend == 0){
-    stato = 1;
+    statoCol = 1;
   } else if((percBlue + percRed)/2 > 40 && blend == 0){
-    stato = 2;
+    statoCol = 2;
   }
 }

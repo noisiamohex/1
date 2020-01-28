@@ -1,6 +1,4 @@
 var font;
-var occhio;
-var error;
 
 var rispMeglio = ["salvami", "Salvami", "SALVAMI"];
 
@@ -29,13 +27,8 @@ var mini = [
   "../Miniprova 6/index_mini6.html",
   "../Miniprova 7/index_mini7.html"];
 
-
-var stato = localStorage.setItem('stato', 0);
-
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
-  occhio = loadImage("../assets/occhio.png");
-  error = loadImage("../assets/error.png");
 }
 
 function setup() {
@@ -62,7 +55,7 @@ function mousePressed(){
 
 goToPage = function(){
 
-  var randPage = random(prove);
+  var randPage = round(random(prove));
 
   if(rispMeglio.indexOf(document.getElementById("myInput").value) !== -1){
     window.open(randPage, "_self");

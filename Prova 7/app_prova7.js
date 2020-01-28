@@ -1,5 +1,4 @@
 var app = angular.module('plunker', ['angularUtils.directives.dirTerminalType']);
-// var el = document.getElementById("ok");
 
 app.controller('MainCtrl', function($scope, $timeout) {
 
@@ -15,6 +14,3 @@ app.controller('MainCtrl', function($scope, $timeout) {
   }
 
 });
-
-// document.getElementById("myInput").value == ("iocicredo")
-// window.open('Prova 1/prova1.html', "_self");

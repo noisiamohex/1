@@ -1,6 +1,4 @@
 var font;
-var occhio;
-var error;
 
 var rispMeglio = ["iivx", "Iivx", "IIVX"];
 var rispPeggio = ["xvii", "Xvii", "XVII"];
@@ -15,8 +13,6 @@ var index = prove.indexOf(thisPage);
 
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
-  occhio = loadImage("../assets/occhio.png");
-  error = loadImage("../assets/error.png")
 }
 
 function setup() {

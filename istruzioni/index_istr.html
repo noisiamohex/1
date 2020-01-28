@@ -34,7 +34,6 @@
     margin-right: -4px;
     height: 16px;
     animation: blink 0.8s infinite;
-    border-color: transparent;
   }
 
   @keyframes blink {
@@ -78,26 +77,9 @@
     color: red;
     font-size: 45px;
     font-family: "Cygnito Mono";
-    padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-top: 80px; */
     left: 50%;
     transform: translate(-50%, 0);
-  }
-
-  form{
-    font-size: 45px;
-    font-family: "Cygnito Mono";
-    color: red;
-  }
-
-  input[type="text"] {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 45px;
-    font-family: "Cygnito Mono";
-    color: red;
   }
 
   img{
@@ -107,6 +89,14 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #indizio{
+    opacity: 0;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    max-width: 40vh;
   }
 
   </style>
@@ -127,36 +117,37 @@
         > ogni prova ha due possibili soluzioni</p>
 
       <p dir-terminal-type="" start-typing="p5" ng-show="p5" on-completion="p6 = true">
-        > ma una soluzione ti rallenterà</p>
+        >	una migliore dell’altra</p>
 
       <p dir-terminal-type="" start-typing="p6" ng-show="p6" on-completion="p7 = true">
-        > al termine di ogni prova riceverai un indizio</p>
+        > solo i veri superstiziosi potranno trovare la soluzione migliore</p>
 
       <p dir-terminal-type="" start-typing="p7" ng-show="p7" on-completion="p8 = true">
-        > quando avrai tutti gli indizi potrai eliminare il malocchio</p>
+        > la soluzione peggiore comporta un test extra</p>
 
       <p dir-terminal-type="" start-typing="p8" ng-show="p8" on-completion="p9= true">
-        > puoi arrenderti in qualsiasi momento</p>
+        > al termine di ogni prova riceverai un indizio</p>
 
       <p dir-terminal-type="" start-typing="p9" ng-show="p9" on-completion="p10 = true">
-        > ma facendolo morirai</p>
+        > quando avrai tutti gli indizi potrai eliminare il malocchio</p>
 
       <p dir-terminal-type="" start-typing="p10" ng-show="p10" on-completion="p11 = true">
-        > se non sai cosa fare, tocca l'occhio</p>
+        > puoi arrenderti in qualsiasi momento</p>
 
-      <p dir-terminal-type="" remove-caret="0" start-typing="p11" ng-show="p11" on-completion="showInputForm()">
-        > scegli un codice identificativo di 3 caratteri</p>
+      <p dir-terminal-type="" start-typing="p11" ng-show="p11" on-completion="p12 = true">
+        > ma facendolo morirai</p>
 
-      <form ng-submit="textEntered()" ng-show="showform">
-        >_ <input type="text" maxlength="3" ng-model="idInput" id="idInput" autofocus on-completion="p11 = true">
-      </form>
+      <p dir-terminal-type="" start-typing="p12" ng-show="p12" on-completion="p13 = true">
+        > se non sai cosa fare, clicca sull’occhio</p>
 
-      <button onclick="goToPage()" ng-show="showform">
+      <button onclick="goToPage()" ng-show="p13">
         [ INIZIA ]</button>
 
     </div>
 
-    <img src="../assets/occhioicona.png" alt>
+    <img src="../assets/indizio2.png" id="indizio">
+    <img src="../assets/occhioicona.png" onclick="findIndizio()" alt>
+
   </body>
 
   <script src="../p5.min.js"></script>

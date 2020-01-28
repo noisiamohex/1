@@ -12,8 +12,6 @@ var thisPage = "../Miniprova 1/index_mini1.html";
 
 var index = mini.indexOf(thisPage);
 
-var stato = localStorage.getItem('stato');
-
 var gatto;
 var macch;
 var strada;
@@ -69,18 +67,6 @@ draw = function() {
     j.move();
     j.display();
   }
-  //move car as cursor
-  // image(macch, tocco, windowHeight / 2 - 100, macch.width/2, macch.height/2);
-
-  // if(muovi == false){
-  //   tocco = 700;
-  //   image(macch, tocco, windowHeight / 2 - 100, macch.width/2, macch.height/2);
-  // }
-  //
-  // if(muovi == true){
-  //   tocco = mouseX;
-  //   image(macch, tocco, windowHeight / 2 - 100, macch.width/2, macch.height/2);
-  // }
 
   if (touches.length > 0) {
     tocco = touches[0].x;

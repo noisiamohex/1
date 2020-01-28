@@ -13,9 +13,6 @@ var thisPage = "../Miniprova 6/index_mini6.html";
 
 var index = mini.indexOf(thisPage);
 
-var stato = localStorage.getItem('stato');
-
-
 preload = function(){
   font = loadFont("../assets/Cygnito Mono.ttf");
 }

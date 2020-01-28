@@ -15,8 +15,6 @@ var thisPage = "../Miniprova 2/index_mini2.html";
 
 var index = mini.indexOf(thisPage);
 
-var stato = localStorage.getItem('stato');
-
 preload = function(){
   font = loadFont("../assets/Cygnito Mono.ttf");
   calend = loadImage("../assets/calend.png");

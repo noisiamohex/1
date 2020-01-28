@@ -66,50 +66,13 @@
     transform: translate(-50%, -50%);
   }
 
-  #password{
+  #testo{
     position: fixed;
     top: 120%;
     left: 50%;
     width: 92%;
     height: 86%;
     transform: translate(-50%, -50%);
-  }
-
-  button {
-    position: absolute;
-    background-color: transparent;
-    border-color: transparent;
-    color: red;
-    font-size: 45px;
-    font-family: "Cygnito Mono";
-    left: 50%;
-    transform: translate(-50%, 80%);
-  }
-
-  #arrendo{
-    position: absolute;
-    background-color: transparent;
-    border-color: transparent;
-    color: red;
-    font-size: 45px;
-    font-family: "Cygnito Mono";
-    transform: translate(-50%, 200%);
-  }
-
-  form{
-    font-size: 45px;
-    font-family: "Cygnito Mono";
-    color: red;
-  }
-
-  input[type="text"] {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 45px;
-    font-family: "Cygnito Mono";
-    color: red;
   }
 
   img{
@@ -119,13 +82,6 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  #error{
-    opacity: 0;
-    position: absolute;
-    top: 80%;
-    max-width: 25vh;
   }
 
   </style>
@@ -143,7 +99,7 @@
 
   <body ng-controller="MainCtrl">
 
-    <div id="password">
+    <div id="testo">
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1">

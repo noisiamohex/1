@@ -10,10 +10,6 @@ var thisPage = "../Miniprova 4/index_mini4.html";
 
 var index = mini.indexOf(thisPage);
 
-
-var stato = localStorage.getItem('stato');
-
-
 preload = function(){
   font = loadFont("../assets/Cygnito Mono.ttf");
   ferro = loadImage("../assets/ferro.png");

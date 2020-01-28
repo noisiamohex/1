@@ -1,7 +1,3 @@
-var retrievedMiniProve = localStorage.getItem('listaMiniProve');
-
-var mini = JSON.parse(retrievedMiniProve);
-
 var stato = localStorage.getItem('stato');
 
 preload = function() {
@@ -23,7 +19,6 @@ function mousePressed(){
 }
 
 function goToPage() {
-  var randPage = random(mini);
 
   if (rispMeglio.indexOf(document.getElementById("myInput").value) !== -1) {
     if (stato == 0) {
@@ -36,7 +31,7 @@ function goToPage() {
       window.open('../Indizio 3/index_indizio3.html', "_self");
     }
   } else if (rispPeggio.indexOf(document.getElementById("myInput").value) !== -1) {
-    window.open(randPage, "_self");
+    window.open('../Loading/index_loading.html', "_self");
   } else {
     document.getElementById("error").style.opacity = 1;
   }

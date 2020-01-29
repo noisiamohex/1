@@ -68,7 +68,7 @@
     left: 50%;
     width: 92%;
     height: 86%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
   }
 
   #buttons{
@@ -116,14 +116,17 @@
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
+        > per salvarvi dovrete inserire una password nel monitor fuori uso</p>
+
+      <p dir-terminal-type="" start-typing="p2" ng-show="p2" on-completion="p3 = true">
         > per attivare il monitor dovrete tenere premuti i tasti H E X sulla tastiera per 5 secondi</p>
       </div>
 
     <div id="buttons">
-    <button onclick="goToPage()" ng-show="p2">
+    <button onclick="goToPage()" ng-show="p3">
         [ CONTINUA ]</button>
 
-      <button id="arrendo" onclick="window.location.href= '../Arrendo/index_arrendo.html'" ng-show="p2">
+      <button id="arrendo" onclick="window.location.href= '../Arrendo/index_arrendo.html'" ng-show="p3">
         [ MI ARRENDO ]</button>
       </div>
 

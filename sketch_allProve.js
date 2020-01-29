@@ -9,8 +9,10 @@ setup = function() {
 draw = function() {
 }
 
-function findIndizio(){
-  document.getElementById("indizio").style.opacity = 1;
+function findIndizio() {
+  if (frameCount > 100) {
+    document.getElementById("indizio").style.opacity = 1;
+  }
 }
 
 function mousePressed(){

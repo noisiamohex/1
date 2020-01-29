@@ -73,7 +73,17 @@ function openCamera() {
  blend = 0;
 }
 
+timer = 60;
+
 function draw() {
+
+  if (frameCount % 60 == 0 && timer > 0) {
+    timer --;
+  }
+
+  if(timer == 1){
+    document.getElementById("indizio").style.opacity = 1;
+  }
 
   cisono.mousePressed(openCamera);
 
@@ -129,6 +139,10 @@ function getTot(_xStart, _xFin, _yStart, _yFin, _dim){
     percGreen = (sommaGreen*100) / sommaTot;
     percBlue = (sommaBlue*100) / sommaTot;
   }
+}
+
+function mousePressed(){
+  document.getElementById("indizio").style.opacity = 0;
 }
 
 function escePass(){

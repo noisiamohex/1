@@ -14,7 +14,6 @@ draw = function() {
 
 function mousePressed(){
   document.getElementById("error").style.opacity = 0;
-  document.getElementById("indizio").style.opacity = 0;
 }
 
 function goToPage() {

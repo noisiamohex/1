@@ -20,7 +20,7 @@ var prove = JSON.parse(retrievedProve);
 
 goToPage = function(){
 
-  var randPage = round(random(prove));
+  var randPage = (random(prove));
 
   window.open(randPage, "_self");
 }

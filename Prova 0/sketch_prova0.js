@@ -55,7 +55,7 @@ function mousePressed(){
 
 goToPage = function(){
 
-  var randPage = round(random(prove));
+  var randPage = (random(prove));
 
   if(rispMeglio.indexOf(document.getElementById("myInput").value) !== -1){
     window.open(randPage, "_self");

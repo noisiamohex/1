@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  index = round(random(frasiSconce.length));
+  index = (random(frasiSconce.length));
 }
 
 function draw() {
@@ -32,6 +32,6 @@ function draw() {
 }
 
 function goToPage(){
-    var randPage = round(random(mini));
+    var randPage = (random(mini));
     window.open(randPage, "_self");
 }

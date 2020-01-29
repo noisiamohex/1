@@ -7,10 +7,7 @@ setup = function() {
 }
 
 draw = function() {
-}
-
-function findIndizio() {
-  if (frameCount > 100) {
+  if (frameCount > 400) {
     document.getElementById("indizio").style.opacity = 1;
   }
 }

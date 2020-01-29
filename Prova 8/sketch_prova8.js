@@ -1,7 +1,7 @@
 var font;
 
-var rispMeglio = ["<o>", "<O>"];
-var rispPeggio = ["<->"];
+var rispMeglio = ["(o)", "(O)", "( O )"];
+var rispPeggio = ["(-)", "( - )"];
 
 var retrievedProve = localStorage.getItem('listaProve');
 

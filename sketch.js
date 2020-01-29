@@ -16,6 +16,7 @@ setup = function() {
  myStorage = window.localStorage;
  localStorage.setItem('startMinuti', startMinuti);
  localStorage.setItem('startOre', startOre);
+ localStorage.setItem('stato', 0);
  localStorage.setItem('totalScore', 500);
  localStorage.setItem('mini1', false);
  localStorage.setItem('mini2', false);

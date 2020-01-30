@@ -144,10 +144,17 @@
     max-width: 40vh;
   }
 
+  #nProva{
+    padding-bottom: 100px;
+  }
+
   </style>
   <body ng-controller="MainCtrl">
     <div>
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
+
+<p id ="nProva" ng-show="p1">
+  </p>
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
         > si dice che la fortuna sia cieca</p>

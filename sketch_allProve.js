@@ -10,6 +10,8 @@ draw = function() {
   if (frameCount > 400) {
     document.getElementById("indizio").style.opacity = 1;
   }
+
+  
 }
 
 function mousePressed(){

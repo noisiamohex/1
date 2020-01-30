@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  select("#sconcio").html("> " + frasiSconce[index]);
+  select("#sconcio").html("> " + "PASSWORD SFORTUNATA INSERITA");
 
   if(frameCount > 200){
     goToPage();

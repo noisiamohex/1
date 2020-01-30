@@ -45,6 +45,8 @@ function setup() {
 
   localStorage.setItem("listaProve", JSON.stringify(prove));
 
+  select("#nProva").html("PROVA " + (Number(localStorage.stato)+1) + " / 3" );
+
   canvas = createCanvas(900, 700);
   canvas.position(tutto.width/2 - 450, 120);
   canvas.parent("tutto");

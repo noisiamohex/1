@@ -11,7 +11,7 @@ draw = function() {
     document.getElementById("indizio").style.opacity = 1;
   }
 
-  
+
 }
 
 function mousePressed(){

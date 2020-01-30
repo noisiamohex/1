@@ -21,6 +21,8 @@ function setup() {
   }
 
   localStorage.setItem("listaProve", JSON.stringify(prove));
+
+  select("#nProva").html("PROVA " + (Number(localStorage.stato)+1) + " / 3" );
 }
 
 timer = 60;

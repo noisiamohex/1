@@ -145,16 +145,19 @@
   }
 
   #nProva{
-    padding-bottom: 100px;
+    position:fixed;
+    left:4%;
+    top:1%;
   }
 
   </style>
   <body ng-controller="MainCtrl">
+
+    <p id ="nProva" ng-show="p1">
+      </p>
+      
     <div>
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
-
-<p id ="nProva" ng-show="p1">
-  </p>
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
         > prendetevi una pausa</p>

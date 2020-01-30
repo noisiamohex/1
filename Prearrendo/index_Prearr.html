@@ -1,0 +1,129 @@
+<html ng-app="plunker">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <title>HEX</title>
+
+    <style>
+    @font-face { font-family: Cygnito Mono; src: url('../assets/Cygnito Mono.ttf'); }
+
+    body {
+      padding: 0;
+      margin: 0;
+      }
+
+    html, body {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      }
+    </style>
+
+      <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.22/angular.js" data-semver="1.2.22"></script>
+      <script src="app_Prearr.js"></script>
+      <script src="../addons/dirTerminalType.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+  </head>
+  <style>
+
+  .caret {
+    display: inline-block;
+    width: 3px;
+    margin-bottom: -2px;
+    margin-left: 3px;
+    margin-right: -4px;
+    height: 16px;
+    animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 92%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  body{
+    background-color: black;
+    animation: pulse 1.5s infinite alternate;
+  }
+
+  p{
+    color: red;
+    font-size: 60px;
+    font-family: "Cygnito Mono";
+    animation: textPulse 1.5s infinite alternate;
+    text-align: center;
+  }
+
+  button {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    color: red;
+    font-size: 50px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-150%, 0);
+    font-family: "Cygnito Mono";
+    animation: textPulse 1.5s infinite alternate;
+  }
+
+  #no{
+    transform: translate(50%, 0);
+  }
+
+  @keyframes pulse{
+    from{background-color: black}
+    to{background-color: red}
+  }
+
+  @keyframes textPulse{
+    from{color: red}
+    to{color: black}
+  }
+
+  </style>
+  <body ng-controller="MainCtrl">
+    <div>
+    <h1 ></h1>
+
+    <p >
+      HAI SCELTO LA MORTE</p>
+
+    <p >
+      SEI SICURO?</p>
+
+
+    <button onclick="window.location.href= '../Arrendo/index_arrendo.html'"">
+      [ SI ]</button>
+
+    <button id="no" onclick="history.back()"">
+      [ NO ]</button>
+    </div>
+
+  </body>
+
+  <script src="p5.min.js"></script>
+  <script src="../addons/p5.dom.min.js"></script>
+  <script src="sketch_Prearr.js"></script>
+
+</html>

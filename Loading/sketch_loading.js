@@ -20,7 +20,7 @@ function preload() {
 }
 
 function setup() {
-  index = (random(frasiSconce.length));
+  index = (random(frasiSconce));
 }
 
 function draw() {

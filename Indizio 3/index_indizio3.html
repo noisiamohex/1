@@ -75,7 +75,8 @@
     position: fixed;
     font-size: 120px;
     left:50%;
-    transform:translate(-50%, 0);
+    top: 57%;
+    transform:translate(-50%, -50%);
   }
 
   img{
@@ -93,15 +94,21 @@
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
-        > per salvarvi dovrete inserire una password nel monitor fuori uso</p>
+        > PASSWORD CORRETTA INSERITA </p>
 
       <p dir-terminal-type="" start-typing="p2" ng-show="p2" on-completion="p3 = true">
-        > per attivare il monitor dovrete tenere premuti i tasti H E X sulla tastiera per 5 secondi</p>
+        > INDIZIO 3 / 3 </p>
 
       <p dir-terminal-type="" start-typing="p3" ng-show="p3" on-completion="p4 = true">
+        > per salvarvi dovrete inserire una password nel monitor fuori servizio dietro l'installazione</p>
+
+      <p dir-terminal-type="" start-typing="p4" ng-show="p4" on-completion="p5 = true">
+        > per attivare il monitor dovrete tenere premuti i tasti H E X sulla tastiera per 5 secondi</p>
+
+      <p dir-terminal-type="" start-typing="p5" ng-show="p5" on-completion="p6 = true">
         > la password da inserire per salvarvi è:</p>
 
-      <p id="mamt" dir-terminal-type="" ng-show="p4"></p>
+      <p id="mamt" dir-terminal-type="" ng-show="p6"></p>
     </div>
 
     <img src="../assets/occhioinvertito.png" alt>

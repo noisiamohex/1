@@ -91,16 +91,6 @@
     transform: translate(-50%, 80%);
   }
 
-  #arrendo{
-    position: absolute;
-    background-color: transparent;
-    border-color: transparent;
-    color: black;
-    font-size: 40px;
-    font-family: "Cygnito Mono";
-    transform: translate(-50%, 250%);
-  }
-
   img{
     max-width: 30vh;
     height: auto;
@@ -116,18 +106,21 @@
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
-        > per salvarvi dovrete inserire una password nel monitor fuori uso</p>
+        > PASSWORD CORRETTA INSERITA </p>
 
       <p dir-terminal-type="" start-typing="p2" ng-show="p2" on-completion="p3 = true">
+        > INDIZIO 2 / 3 </p>
+
+      <p dir-terminal-type="" start-typing="p3" ng-show="p3" on-completion="p4 = true">
+        > per salvarvi dovrete inserire una password nel monitor fuori servizio dietro l'installazione</p>
+
+      <p dir-terminal-type="" start-typing="p4" ng-show="p4" on-completion="p5 = true">
         > per attivare il monitor dovrete tenere premuti i tasti H E X sulla tastiera per 5 secondi</p>
       </div>
 
     <div id="buttons">
-    <button onclick="goToPage()" ng-show="p3">
+    <button onclick="goToPage()" ng-show="p5">
         [ CONTINUA ]</button>
-
-      <button id="arrendo" onclick="window.location.href= '../Arrendo/index_arrendo.html'" ng-show="p3">
-        [ MI ARRENDO ]</button>
       </div>
 
     <img src="../assets/occhioinvertito.png" alt>

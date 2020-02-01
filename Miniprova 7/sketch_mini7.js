@@ -18,8 +18,7 @@ var index = mini.indexOf(thisPage);
 preload = function(){
   font = loadFont("../assets/Cygnito Mono.ttf");
   dito = loadImage("../assets/dito1.png");
-  palmo = loadImage("../assets/mano1.png");
-  palmo2 = loadImage("../assets/mano2.png");
+  palmo = loadImage("../assets/mano2.png");
 }
 
 setup = function(){
@@ -50,14 +49,8 @@ draw = function() {
   anulare.display();
   medio.display();
 
-  if (anulare.touched == false && medio.touched == false) {
-    imageMode(CENTER);
-    var mano = image(palmo, width / 2 - 50, height / 2 + 60, palmo.width / 2.5, palmo.height / 2.5);
-  }
-
-  if (anulare.touched == true || medio.touched == true) {
-    mano = image(palmo2, width / 2 - 50, height / 2 + 60, palmo.width / 2.5, palmo.height / 2.5);
-  }
+  imageMode(CENTER);
+  var mano = image(palmo, width / 2 - 50, height / 2 + 60, palmo.width / 2.5, palmo.height / 2.5);
 
   if (anulare.touched == true && medio.touched == true) {
     goToPage();

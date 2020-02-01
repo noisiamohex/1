@@ -32,11 +32,11 @@ function setup() {
 
   var defScore = Number(totalScore)+ Number(tempoScore);
 
-  duration = ("00" + tempo).slice(-4);
+  duration = ("00" + tempo).slice(-3);
 
   dispScore = ("0" + defScore).slice(-3);
 
-  document.getElementById('mamt').innerHTML = dispScore+"AB"+duration;
+  document.getElementById('mamt').innerHTML = dispScore+"RJ7"+duration;
 }
 
 function draw() {

@@ -86,7 +86,7 @@
 
   #bottone{
   position: absolute;
-  top: 73%;
+  top: 68%;
   max-width: 25vh;
   }
 
@@ -108,8 +108,11 @@
     <div id="testo">
       <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
 
-      <p dir-terminal-type="" start-typing="p1" ng-show="p1">
+      <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
         > ruota il ferro di cavallo per non far cadere la fortuna</p>
+
+      <p dir-terminal-type="" start-typing="p2" ng-show="p2">
+        > usa il tasto</p>
     </div>
 
     <img src="../assets/occhioicona.png" alt>

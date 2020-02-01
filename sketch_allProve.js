@@ -22,12 +22,15 @@ function goToPage() {
 
   if (rispMeglio.indexOf(document.getElementById("myInput").value) !== -1) {
     if (stato == 0) {
+      localStorage.setItem('fortunata1', true);
       window.open('../Indizio 1/index_indizio1.html', "_self");
     }
     if (stato == 1) {
+      localStorage.setItem('fortunata2', true);
       window.open('../Indizio 2/index_indizio2.html', "_self");
     }
     if (stato == 2) {
+      localStorage.setItem('fortunata3', true);
       window.open('../Indizio 3/index_indizio3.html', "_self");
     }
   } else if (rispPeggio.indexOf(document.getElementById("myInput").value) !== -1) {

@@ -8,7 +8,9 @@ function preload() {
 }
 
 function setup() {
-
+  if(localStorage.fortunata2 == "true"){
+      select("#header").html("> PASSWORD FORTUNATA INSERITA");
+  }
 }
 
 function draw() {

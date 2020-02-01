@@ -11,6 +11,9 @@ function preload() {
 }
 
 function setup() {
+    if(localStorage.fortunata3 == "true"){
+        select("#header").html("> PASSWORD FORTUNATA INSERITA");
+    }
 
   var startMinuti = localStorage.getItem('startMinuti');
   var startOre = localStorage.getItem('startOre');

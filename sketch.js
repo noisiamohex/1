@@ -26,6 +26,9 @@ setup = function() {
  localStorage.setItem('mini6', false);
  localStorage.setItem('mini7', false);
  localStorage.setItem('arrendo', false);
+ localStorage.setItem('fortunata1', false);
+ localStorage.setItem('fortunata2', false);
+ localStorage.setItem('fortunata3', false);
 }
 
 draw = function() {

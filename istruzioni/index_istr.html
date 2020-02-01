@@ -91,6 +91,14 @@
     transform: translate(-50%, -50%);
   }
 
+  #indizio{
+    opacity: 0;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    max-width: 40vh;
+  }
+
   </style>
   <body ng-controller="MainCtrl">
     <div>
@@ -138,7 +146,7 @@
     </div>
 
     <img src="../assets/occhioicona.png" onclick="findIndizio()" alt>
-    <img src="../assets/indizioIstr.png" alt>
+    <img src="../assets/indizioistr.png" id ="indizio" alt>
 
   </body>
 

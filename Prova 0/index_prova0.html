@@ -129,6 +129,14 @@
     max-width: 25vh;
   }
 
+  #indizio{
+    opacity: 0;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    max-width: 40vh;
+  }
+
   </style>
   <body ng-controller="MainCtrl">
     <div>
@@ -157,7 +165,7 @@
 
     <img src="../assets/error.png" id="error">
     <img src="../assets/occhioicona.png" onclick="findIndizio()" alt>
-    <img src="../assets/indizio0.png">
+    <img src="../assets/indizio0.png" id ="indizio">
   </body>
 
   <script src="../p5.min.js"></script>

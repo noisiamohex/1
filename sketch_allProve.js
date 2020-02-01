@@ -7,15 +7,16 @@ setup = function() {
 }
 
 draw = function() {
-  if (frameCount > 400) {
-    document.getElementById("indizio").style.opacity = 1;
-  }
-
-
 }
+
+ function findIndizio(){
+  document.getElementById("indizio").style.opacity = 1;
+ }
+
 
 function mousePressed(){
   document.getElementById("error").style.opacity = 0;
+  document.getElementById("indizio").style.opacity = 0;
 }
 
 function goToPage() {

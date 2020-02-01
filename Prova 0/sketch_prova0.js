@@ -18,7 +18,7 @@ function findIndizio(){
 }
 
 function mousePressed(){
-//  document.getElementById("indizio").style.opacity = 0;
+    document.getElementById("indizio").style.opacity = 0;
     document.getElementById("error").style.opacity = 0;
 }
 

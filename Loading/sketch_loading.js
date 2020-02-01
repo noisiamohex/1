@@ -32,6 +32,6 @@ function draw() {
 }
 
 function goToPage(){
-    var randPage = (random(mini));
+    var randPage = random(mini);
     window.open(randPage, "_self");
 }

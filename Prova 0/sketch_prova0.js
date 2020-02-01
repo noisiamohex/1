@@ -25,7 +25,7 @@ function mousePressed(){
 goToPage = function(){
 
   if(rispMeglio.indexOf(document.getElementById("myInput").value) !== -1){
-    window.open('../istruzioni2/index_istr2.html');
+    window.open('../istruzioni2/index_istr2.html', "_self");
   } else{
     document.getElementById("error").style.opacity = 1;
   }

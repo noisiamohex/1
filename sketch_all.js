@@ -8,6 +8,8 @@ setup = function() {
 }
 
 draw = function() {
+
+    consol.log("wewe");
   if (hour()==startOre && minute() >= (startMinuti + 45)){
       window.open('../Arrendo/index_arrendo.html', "_self");
   }

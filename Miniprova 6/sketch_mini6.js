@@ -35,7 +35,6 @@ if (localStorage.mini7 == "false"){
 
     indice = new Circle(width/2, height/3);
     medio = new Circle(width/2 + 200, height/3-100);
-
 }
 
 draw = function() {
@@ -62,9 +61,9 @@ for (var i = 0; i < touches.length; i++){
   textAlign(CENTER,CENTER);
   text("indice", width/2, height/3 - 100);
   if(move ==false){
-   text("medio", width/2 + 200, height/3-200);
+   text("medio", width/2 + 200, height/3 - 200);
  } else{
-   text("medio", width/2 - 280, height/3-200);
+   text("medio", width/2 - 120, height/3 - 200);
  }
 
 }
@@ -77,7 +76,6 @@ function Circle(_x, _y, _size){
 
   this.move = function(){
     this.x = width/2 - 120;
-    this.y = height/3 - 100
   }
 
   this.display = function(){

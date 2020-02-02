@@ -47,8 +47,8 @@ draw = function() {
   imageMode(CENTER);
   image(calend, width/2, height/2 - 40, calend.width*5/11, calend.height*5/11);
 
-  var toccoX = width/2 + 150;
-  var toccoY = height/2 - 95;
+  var toccoX = width/2 + 134;
+  var toccoY = height/2 - 90;
 
   if (touches.length > 0) {
     toccoX = touches[0].x;

@@ -91,14 +91,6 @@
     transform: translate(-50%, -50%);
   }
 
-  #indizio{
-    opacity: 0;
-    position: fixed;
-    top: 30%;
-    left: 40%;
-    max-width: 40vh;
-  }
-
   </style>
   <body ng-controller="MainCtrl">
     <div>
@@ -137,16 +129,12 @@
       <p dir-terminal-type="" start-typing="p11" ng-show="p11" on-completion="p12 = true">
         > ma facendolo MORIRAI</p>
 
-      <p dir-terminal-type="" start-typing="p12" ng-show="p12" on-completion="p13 = true">
-        > se non sai cosa fare, clicca sull'occhio</p>
-
-      <button onclick="goToPage()" ng-show="p13">
+      <button onclick="goToPage()" ng-show="p12">
         [ INIZIA ]</button>
 
     </div>
 
-    <img src="../assets/occhioicona.png" onclick="findIndizio()" alt>
-    <img src="../assets/indizioistr.png" id ="indizio" alt>
+    <img src="../assets/occhioicona.png">
 
   </body>
 

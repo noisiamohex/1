@@ -29,15 +29,4 @@ function setup() {
 timer = 60;
 
 function draw() {
-  if (frameCount % 60 == 0 && timer > 0) {
-    timer --;
-  }
-
-  if(timer == 1){
-    document.getElementById("indizio").style.opacity = 1;
-  }
-}
-
-function mousePressed(){
-  document.getElementById("indizio").style.opacity = 0;
 }

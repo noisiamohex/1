@@ -34,10 +34,4 @@ function draw() {
   }
 
   if(timer == 1){
-    document.getElementById("indizio").style.opacity = 1;
-  }
-}
-
-function mousePressed(){
-  document.getElementById("indizio").style.opacity = 0;
 }

@@ -85,3 +85,10 @@ draw = function() {
   text("score: " + score + "/7", width - 350, height/10 - 40);
   pop();
 }
+
+history.pushState(null, null, location.href);
+history.back();
+history.forward();
+window.onpopstate = function () {
+  history.go(1);
+}

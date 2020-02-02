@@ -45,7 +45,7 @@ draw = function() {
  if(hour() != startOre && (minute() + 15) >= startMinuti){
      window.open('../Arrendo/index_arrendo.html', "_self");
  }
- 
+
   background(0);
 
   indice.display();
@@ -90,4 +90,11 @@ function Circle(_x, _y, _size){
     fill(255, 0, 0);
     ellipse(this.x, this.y, this.size);
   }
+}
+
+history.pushState(null, null, location.href);
+history.back();
+history.forward();
+window.onpopstate = function () {
+  history.go(1);
 }

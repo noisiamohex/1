@@ -49,7 +49,7 @@ draw = function() {
   }
 
 for (var i = 0; i < touches.length; i++){
-  var d = dist(touches[i].x, touches[i].y, width/2-280, height/3-100);
+  var d = dist(touches[i].x, touches[i].y, width/2 - 120, height/3 - 200);
 };
 
   if(touches.length == 2 && d < 100 && move == true){

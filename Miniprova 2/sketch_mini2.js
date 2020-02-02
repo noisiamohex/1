@@ -43,6 +43,13 @@ setup = function(){
 
 draw = function() {
 
+  if (hour()==startOre && minute() >= (startMinuti + 45)){
+     window.open('../Arrendo/index_arrendo.html', "_self");
+ }
+ if(hour() != startOre && (minute() + 15) >= startMinuti){
+     window.open('../Arrendo/index_arrendo.html', "_self");
+ }
+
   background(0);
   imageMode(CENTER);
   image(calend, width/2, height/2 - 40, calend.width*5/11, calend.height*5/11);

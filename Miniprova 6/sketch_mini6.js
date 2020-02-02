@@ -52,7 +52,7 @@ for (var i = 0; i < touches.length; i++){
   var d = dist(touches[i].x, touches[i].y, width/2 - 120, height/3 - 200);
 };
 
-  if(touches.length == 2 && d < 100 && move == true){
+  if(touches.length == 2 && d < 200 && move == true){
     goToPage();
   }
 

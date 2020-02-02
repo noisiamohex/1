@@ -27,7 +27,6 @@
   <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
 
       <script src="p5.min.js"></script>
-      <script src="../addons/p5.dom.min.js"></script>
       <script src="sketch_arrendo.js"></script>
 
   </head>
@@ -37,26 +36,21 @@
     background-color: black;
   }
 
-  p{
-    position: absolute;
+  p {
     color: red;
     font-size: 50px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: "Cygnito Mono";
+    text-align:center;
   }
 
-  p {
+  div{
     position: absolute;
     background-color: transparent;
     border-color: transparent;
-    color: red;
-    font-size: 50px;
     top: 70%;
     left: 50%;
+    width:92%;
     transform: translate(-50%, -50%);
-    font-family: "Cygnito Mono";
   }
 
   #icona {
@@ -85,10 +79,10 @@
 
   </style>
   <body ng-controller="MainCtrl">
-    <h1 dir-terminal-type="" on-completion="p1 = true"></h1>
-
-    <p ng-show="p1">
+    <div>
+    <p>
       SOGGETTO DECEDUTO</p>
+   </div>
 
     <img src="../assets/occhioicona.png" id="icona" alt>
     <img src="../assets/scheletro.png" id="spoopy" alt>

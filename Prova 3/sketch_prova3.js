@@ -1,7 +1,7 @@
 var font;
 
 var rispMeglio = ["()", "() "];
-var rispPeggio = [")(", ")( "];
+var rispPeggio = [")(", ") ("];
 
 var retrievedProve = localStorage.getItem('listaProve');
 

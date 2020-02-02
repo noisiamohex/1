@@ -76,7 +76,8 @@ function Circle(_x, _y, _size){
   this.size = 100;
 
   this.move = function(){
-    this.x = width/2-280;
+    this.x = width/2 - 120;
+    this.y = height/3 - 100
   }
 
   this.display = function(){

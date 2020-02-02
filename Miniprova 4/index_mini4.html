@@ -66,6 +66,17 @@
     transform: translate(-50%, -50%);
   }
 
+  button {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    color: red;
+    font-size: 40px;
+    font-family: "Cygnito Mono";
+    left: 50%;
+    transform: translate(-50%, 80%);
+  }
+
   #testo{
     position: fixed;
     top: 120%;
@@ -110,12 +121,11 @@
 
       <p dir-terminal-type="" start-typing="p1" ng-show="p1" on-completion="p2 = true">
         > ruota il ferro di cavallo per non far cadere la fortuna</p>
-
-      <p dir-terminal-type="" start-typing="p2" ng-show="p2">
-        > usa il tasto</p>
     </div>
 
+    <button id ="bottone" onclick="ruotaFerro()">
+      [ RUOTA ]</button>
+
     <img src="../assets/occhioicona.png" alt>
-    <img id="bottone" onclick="ruotaFerro()" src="../assets/ROTATE.png" alt>
   </body>
 </html>

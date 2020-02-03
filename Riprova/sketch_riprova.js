@@ -9,10 +9,10 @@ function setup() {
 }
 
 function draw() {
-  if (hour()==startOre && minute() >= (startMinuti + 45)){
+  if (hour()== Number(startOre) && minute() >= (Number(startMinuti) + 45)){
      window.open('../Arrendo/index_arrendo.html', "_self");
  }
- if(hour() != startOre && (minute() + 15) >= startMinuti){
+ if(hour() != Number(startOre) && (minute() + 15) >= Number(startMinuti)){
      window.open('../Arrendo/index_arrendo.html', "_self");
  }
 }

@@ -15,13 +15,13 @@ var listaProve = [
 ]
 
 var listaMiniProve = [
-  "../Miniprova 1/index_mini1.html",
-  "../Miniprova 2/index_mini2.html",
-  "../Miniprova 3/index_mini3.html",
-  "../Miniprova 4/index_mini4.html",
-  "../Miniprova 5/index_mini5.html",
-  "../Miniprova 6/index_mini6.html",
-  "../Miniprova 7/index_mini7.html",
+  "../Miniprova 1/index_mn1.html",
+  "../Miniprova 2/index_2m2i.html",
+  "../Miniprova 3/index_meen3.html",
+  "../Miniprova 4/index_44mni.html",
+  "../Miniprova 5/index_mnp5v.html",
+  "../Miniprova 6/index_p6r6on.html",
+  "../Miniprova 7/index_7p7n7a.html",
 ]
 
 // var iOs = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;

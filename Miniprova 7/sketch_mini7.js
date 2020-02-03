@@ -12,7 +12,7 @@ var retrievedMiniProve = localStorage.getItem('listaMiniProve');
 
 var mini = JSON.parse(retrievedMiniProve);
 
-var thisPage = "../Miniprova 7/index_mini7.html";
+var thisPage = "../Miniprova 7/index_7p7n7a.html";
 
 var index = mini.indexOf(thisPage);
 

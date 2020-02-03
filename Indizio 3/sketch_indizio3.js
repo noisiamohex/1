@@ -6,6 +6,9 @@ var dispScore;
 
 var password;
 
+var startMinuti = localStorage.getItem('startMinuti');
+var startOre = localStorage.getItem('startOre');
+
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
 }
@@ -14,9 +17,6 @@ function setup() {
     if(localStorage.fortunata3 == "true"){
         select("#header").html("> PASSWORD FORTUNATA INSERITA");
     }
-
-  var startMinuti = localStorage.getItem('startMinuti');
-  var startOre = localStorage.getItem('startOre');
 
   var endOre = hour();
   var endMinuti;

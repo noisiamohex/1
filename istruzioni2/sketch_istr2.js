@@ -1,5 +1,9 @@
 var font;
 
+var retrievedProve = localStorage.getItem('listaProve');
+
+var prove = JSON.parse(retrievedProve);
+
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
 }

@@ -27,7 +27,7 @@ function setup() {
 
 }
 
-timer = 60;
+function draw() {
 
 if (hour()== Number(startOre) && minute() >= (Number(startMinuti) + 45)){
    window.open('../Arrendo/index_arrendo.html', "_self");

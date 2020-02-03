@@ -15,7 +15,7 @@ preload = function(){
 
 setup = function(){
 if (localStorage.mini3 == "false"){
-  localStorage.setItem('totalScore', localStorage.totalScore - 150);
+  localStorage.setItem('totalScore', Number(localStorage.totalScore) - 150);
   localStorage.setItem('mini3', true);
 }
 

@@ -5,7 +5,7 @@ function preload() {
 }
 
 function setup() {
-    localStorage.setItem('totalScore', localStorage.totalScore + 150);
+    localStorage.setItem('totalScore', Number(localStorage.totalScore) + 150);
 }
 
 function draw() {

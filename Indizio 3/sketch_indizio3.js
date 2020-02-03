@@ -27,7 +27,7 @@ function setup() {
     endMinuti = minute() + 60;
   }
 
-  var tempo = endMinuti - startMinuti;
+  var tempo = endMinuti - Number(startMinuti);
 
   var totalScore = localStorage.getItem("totalScore");
 

@@ -15,6 +15,8 @@ var retrievedMiniProve = localStorage.getItem('listaMiniProve');
 
 var mini = JSON.parse(retrievedMiniProve);
 
+var endLoading = false;
+
 function preload() {
   font = loadFont("../assets/Cygnito Mono.ttf");
 }
@@ -30,11 +32,12 @@ function draw() {
  if(hour() != startOre && (minute() + 15) >= startMinuti){
      window.open('../Arrendo/index_arrendo.html', "_self");
  }
- 
+
   select("#sconcio").html("> " + index);
 
-  if(frameCount > 200){
+  if(frameCount > 200 && endLoading == false){
     goToPage();
+    endLoading = true;
   }
 }
 

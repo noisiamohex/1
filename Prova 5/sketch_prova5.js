@@ -7,7 +7,7 @@ var retrievedProve = localStorage.getItem('listaProve');
 
 var prove = JSON.parse(retrievedProve);
 
-var thisPage = "../Prova 5/index_prova5.html";
+var thisPage = "../Prova 5/index_5pro5.html";
 
 var index = prove.indexOf(thisPage);
 

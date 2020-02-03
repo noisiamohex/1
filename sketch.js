@@ -4,14 +4,14 @@ var startMinuti;
 var startOre;
 
 var listaProve = [
-  "../Prova 1/index_prova1.html",
-  "../Prova 2/index_prova2.html",
-  "../Prova 3/index_prova3.html",
-  "../Prova 4/index_prova4.html",
-  "../Prova 5/index_prova5.html",
-//  "../Prova 6/index_prova6.html",
-  "../Prova 7/index_prova7.html",
-  "../Prova 8/index_prova8.html"
+  "../Prova 1/index_1varpo.html",
+  "../Prova 2/index_r2v.html",
+  "../Prova 3/index_33.html",
+  "../Prova 4/index_quvr.html",
+  "../Prova 5/index_5pro5.html",
+//  "../Prova 6/index_seseva.html",
+  "../Prova 7/index_777rpor.html",
+  "../Prova 8/index_prv8p.html"
 ]
 
 var listaMiniProve = [

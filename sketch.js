@@ -9,7 +9,7 @@ var listaProve = [
   "../Prova 3/index_prova3.html",
   "../Prova 4/index_prova4.html",
   "../Prova 5/index_prova5.html",
-  "../Prova 6/index_prova6.html",
+//  "../Prova 6/index_prova6.html",
   "../Prova 7/index_prova7.html",
   "../Prova 8/index_prova8.html"
 ]
@@ -24,11 +24,11 @@ var listaMiniProve = [
   "../Miniprova 7/index_mini7.html",
 ]
 
-var iOs = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-if (iOs == true){
-  listaProve.splice(5,1);
-}
+// var iOs = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+//
+// if (iOs == true){
+//   listaProve.splice(5,1);
+// }
 
 preload = function() {
   font = loadFont("./assets/Cygnito Mono.ttf");

@@ -11,7 +11,7 @@ var listaProve = [
   "../Prova 5/index_5pro5.html",
 //  "../Prova 6/index_seseva.html",
   "../Prova 7/index_777rpor.html",
-  "../Prova 8/index_prv8p.html"
+//  "../Prova 8/index_prv8p.html"
 ]
 
 var listaMiniProve = [

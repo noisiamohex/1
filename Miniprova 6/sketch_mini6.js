@@ -62,6 +62,7 @@ for (var i = 0; i < touches.length; i++){
 
   if(touches.length == 2 && d < 200 && move == true){
     goToPage();
+    move = false;
   }
 
   textFont(font);

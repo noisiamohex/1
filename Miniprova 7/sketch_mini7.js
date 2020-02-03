@@ -6,6 +6,8 @@ var medio;
 var palmo;
 var dito;
 
+var endLoading = false;
+
 var retrievedMiniProve = localStorage.getItem('listaMiniProve');
 
 var mini = JSON.parse(retrievedMiniProve);
@@ -59,8 +61,9 @@ draw = function() {
   imageMode(CENTER);
   var mano = image(palmo, width / 2 - 50, height / 2 + 60, palmo.width / 2.5, palmo.height / 2.5);
 
-  if (anulare.touched == true && medio.touched == true) {
+  if (anulare.touched == true && medio.touched == true && endLoading == false) {
     goToPage();
+    endLoading = true;
   }
 
 }

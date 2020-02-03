@@ -16,6 +16,8 @@ var gatto;
 var macch;
 var strada;
 
+var endLoading = false;
+
 var canvas;
 
 preload = function(){
@@ -93,8 +95,9 @@ draw = function() {
     }
   }
 
-  if(finalScore >= 3 && frameCount > 400){
+  if(finalScore >= 3 && frameCount > 400 && endLoading == false){
     goToPage();
+    endLoading = true;
   }
 
   if(finalScore <= 2 && frameCount > 400){

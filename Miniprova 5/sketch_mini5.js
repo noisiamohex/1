@@ -6,6 +6,8 @@ var scored = false;
 
 var tocco = false;
 
+var endLoading = false;
+
 var retrievedMiniProve = localStorage.getItem('listaMiniProve');
 
 var mini = JSON.parse(retrievedMiniProve);
@@ -71,8 +73,9 @@ draw = function() {
      window.open('../Arrendo/index_arrendo.html', "_self");
  }
 
-  if(score == 7){
+  if(score == 7 && endLoading == false){
     goToPage();
+    endLoading = true;
   }
 
   rect(width - 350, height/10 - 100, 300, 100);

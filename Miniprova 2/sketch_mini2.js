@@ -7,6 +7,8 @@ var obst;
 
 var obstacle;
 
+var endLoading = false;
+
 var retrievedMiniProve = localStorage.getItem('listaMiniProve');
 
 var mini = JSON.parse(retrievedMiniProve);
@@ -73,8 +75,9 @@ draw = function() {
 
   var d = dist(toccoX, toccoY, obstacle.x, obstacle.y);
 
-  if(d < 50){
+  if(d < 50 && endLoading == false){
     goToPage();
+    endLoading = true;
 }
 }
 
